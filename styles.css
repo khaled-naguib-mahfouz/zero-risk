@@ -1,7 +1,20 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden; 
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 :root {
@@ -10,9 +23,17 @@
   --font-size: 16px;
   --C-pri-Dark-Slate-Blue: #243942;
 }
+@media screen and (max-width: 1450px) and (min-width: 320px){
+  body {
+    zoom: 80%;
+}
+}
 body {
   font-family: Arial, sans-serif;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  
 }
 .home {
   display: flex;
@@ -38,6 +59,9 @@ body {
   align-items: flex-start;
   gap: 49px;
   background: var(--white, #fdfdfd);
+  /* flex-shrink: 0; */
+  /* min-width: 320px; */
+
 }
 .container-for-nav {
   width: 100%;
@@ -75,7 +99,9 @@ button span {
 .right-nav {
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: 10%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .logo img {
@@ -130,14 +156,31 @@ ul li a:hover {
 .logo a {
   font-size: 1rem;
 }
+/* @media (max-width: 1600px) and (min-width: 769px) {
+  .welcome-section {
+   min-width: 320px; 
+  }
+} */
+@media (max-width: 768px) and (min-width: 576px) {
+  .welcome-section {
+  min-width: 520px;
+  /* background-color: red; */
+  }
+}
+@media (max-width: 566px) and (min-width: 320px) {
+  .welcome-section {
+    min-width: 320px;
+  }
+}
 .welcome-section {
   height: 672.952px;
-  width: 100%;
+  min-width: 350px;
+  width: 80%;
   /* display: flex;
   position: relative; */
 }
 .welcome-section img {
-  width: 716px;
+  /* width: 716px; */
   height: 672.952px;
   flex-shrink: 0;
   border: 1px solid var(--Primary-Color, #388260);
@@ -147,22 +190,28 @@ ul li a:hover {
 }
 
 .image-container {
-  /* position: relative; */
+  min-width: 600px;
+  position: relative;
   width: 90%;
   height: 672.952px;
   flex-shrink: 0;
 }
 .rectangle {
   width: 92%;
-  height: 612px;
+  height: 95%;
+  position: absolute;
+top: 2%;
+left: 2%;
   flex-shrink: 0;
   border-radius: 8px;
   border: 2.5px solid var(--Primary-Color, #388260);
   background: rgba(217, 217, 217, 0);
 }
 .image-container img {
+  position: absolute;
+  top: 0%;
   width: 90%;
-  height: 635px;
+  height: 93%;
   flex-shrink: 0;
 }
 /* .image-container::before {
@@ -179,6 +228,10 @@ ul li a:hover {
 
 .welcome-content {
   width: 50%;
+  min-width: 320px;
+  left: 50%;
+    top: 18%;
+  position: absolute;
   height: 422px;
   z-index: 600;
   flex-shrink: 0;
@@ -189,7 +242,6 @@ ul li a:hover {
 .welcome-text {
   display: flex;
   width: 100%;
-  height: 422px;
   padding: 64px 48px;
   flex-direction: column;
   justify-content: center;
@@ -214,7 +266,7 @@ ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  gap: 40px;
+  gap: 10%;
   flex-shrink: 0;
   /* position: relative; */
 }
@@ -223,7 +275,8 @@ ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  gap: 16px;
+  gap: 7%;
+  /* flex-shrink: 0; */
   /* position: absolute;
   top: 0%;
   right: 0%; */
@@ -236,7 +289,7 @@ ul li a:hover {
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%; /* 60px */
+  /* line-height: 150%; 60px */
 }
 .sec-text {
   color: var(--white, #fdfdfd);
@@ -249,13 +302,13 @@ ul li a:hover {
 }
 .know-more {
   display: flex;
-  width: 260px;
+  width: 70%;
   height: 56px;
   padding: 8px 16px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
+  gap: 7%;
+  /* flex-shrink: 0; */
   border-radius: 8px;
   background: rgba(253, 253, 253, 0.99);
   margin-top: 50px;
@@ -337,13 +390,13 @@ ul li a:hover {
 }
 .inner-service {
   display: flex;
-  width: 1280px;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: 56px;
 }
 .title {
-  width: 857px;
+  width: 80%;
   height: 173px;
   display: flex;
   justify-content: center; /* Horizontally center */
@@ -362,7 +415,7 @@ ul li a:hover {
   line-height: 150%; /* 60px */
 }
 .title2 {
-  width: 857px;
+  width: 100%;
   height: 103px;
   flex-shrink: 0;
   color: var(--Paragraph, #535659);
@@ -385,12 +438,12 @@ ul li a:hover {
   height: 375px;
   position: relative;
 }
-.decor {
-  width: 744px;
-  height: 375px;
-  flex-shrink: 0;
+.main img {
+  width: 100%;
+  height: 365px;
+  object-fit: cover;
   border-radius: 8px;
-  background: url(https://s3-alpha-sig.figma.com/img/68c0/0b4a/99e06aeb6c81986f7743405a121ebb04?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=c0XVeEVnxnHxegKbvO5J9MHp9PCsJB6ACyZGRZkYlFJVRERdr3ADjQYcY-~S-bH9NwloPcQKVT~g5fbYSa9SChE1J2QBnEVliZ4Ep-AujgPZm7iXnRa6SrS~vaFEqswVic8-Rby~0ZEVTYkdkzM4BGvb6I1-IjVP5Y~FGbeEFTSThNDsYxoNUEn8E4UGcd-0eXBkwr6~8Xw7jkkMVm~RSyQVODCKPNxE2m0CCiy9dp8k6SLMejYxx38GJHGSnmbCgFtuH2Q8OGMFtv2RnKCOia~9CYX3ctg5LjlaqBPnQfK3rQfKmCD~bG84OXSZfOxJJIi~qCTHHt1U2P~L-jSkdQ__)
+  background: 
     lightgray 50% / cover no-repeat;
 }
 
