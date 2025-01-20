@@ -530,5 +530,9 @@ gap: 65px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 60px */
-
+}
+.photos img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover; 
 }
