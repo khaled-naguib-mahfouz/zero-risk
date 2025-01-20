@@ -77,7 +77,8 @@ body {
   font-family: "Noto Sans Arabic";
   font-weight: 500;
   font-size: 1rem;
-  text-align: right;
+  text-align: center;
+  width: 120px;
 }
 
 /* Right Navigation */
@@ -536,3 +537,244 @@ gap: 65px;
   width: 100%;
   object-fit: cover; 
 }
+/* ---------------- */
+.first-div, .second-div {
+  height: 400px;
+}
+.first-div{
+  position: relative;
+}
+.rectanglle{
+  width: 30%;
+height: 168.766px;
+flex-shrink: 0;
+border-radius: 10.151px;
+border: 2.538px solid var(--Primary-Color, #388260);
+}
+.first-div img{
+  width: 70%;
+height: 365.861px;
+flex-shrink: 0;
+border-radius: 10.151px;
+background: #D9D9D9;
+position: absolute;
+top: 5%;
+left: 10%;
+}
+.second-div{
+  position: relative;
+}
+.renew{
+  color: var(--text-color, #252626);
+font-family: "Noto Sans Arabic";
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: right;
+}
+.desc{
+  color: var(--subtitel-text-color, #606161);
+text-align: right;
+font-family: Inter;
+font-style: normal;
+font-weight: 500;
+line-height: 180%; /* 32.4px */
+}
+.contact-us{
+  position: absolute;
+  right: 2%;
+  width: 103px !important;
+}
+.contact-us span{
+  font-size: 18px !important;
+}
+@media (max-width: 1000px) {
+  .first-div {
+display: none;  }
+}
+
+/* ------------ */
+.icons{
+  position: absolute;
+  top:80%;
+display: flex;
+gap: 30px;
+  right: 0;
+  margin-right: 37%;
+}
+
+.for-map{
+  background: #EBFFF0;
+padding: 50px;
+}
+iframe{
+  width: 80% !important;
+  /* margin-left: 10%; */
+  height: 100% !important;
+
+}
+.con{
+  /* margin-right: 40%; */
+}
+.do-you{
+  /* margin-right: 27%; */
+}
+.perfect{
+  /* margin-right: 10%; */
+}
+.first-divv{
+  position: relative;
+  height: 400px;
+
+}
+/* --------------- */
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background: var(--Primary-Color, #388260);
+  color: white;
+  border: none;
+  border-radius: 100%;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Show the button when scrolled down 100px from the top */
+#scrollToTopBtn.show {
+  display: block;
+  z-index: 2000;
+}
+
+/* ---------- */
+
+.HD_footer {
+  position: relative;
+  padding: 40px 0px 4px 34px;
+  box-shadow: 0px 3px 6px #00000029;
+  width: 100%;
+ background: var(--Primary-Color, #388260);;
+
+}
+
+.footer_mask {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.footer_init_logo {
+  width: 110px;
+  margin-bottom: 40px;
+  right: 0;
+}
+
+.footer_init_about {
+  color: #F5F7FA;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 48px;
+}
+
+.footer_section_title {
+  color: #F5F7FA;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--white, #FDFDFD);
+text-align: right;
+
+/* New folder/24 Px Semibold */
+font-family: "Noto Sans Arabic";
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.footer_contact_with_flag a {
+  color: #CBD2D9;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  display: block;
+
+}
+
+.footer_contact_with_flag img {
+  width: 24px;
+  height: 20px;
+  margin-right: 0.5rem;
+  
+
+}
+
+.footer_support a {
+  color: #CBD2D9;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  display: block;
+
+  color: var(--white, #FDFDFD);
+  font-family: "Noto Sans Arabic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer_support img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+
+}
+
+.footer_copyright {
+  text-align: center;
+  color: #CBD2D9;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+
+@media (max-width:991px) {
+  .footer_init_logo {
+      margin: auto;
+      display: block;
+      margin-bottom: 40px;
+  }
+
+  .footer_init_about {
+      text-align: center;
+  }
+
+  .footer_second_section {
+      text-align: center;
+  }
+
+  .footer_third_section {
+      text-align: center;
+      margin-top: 30px;
+  }
+
+  .HD_footer{
+      padding: 24px;
+  }
+
+}
+
+@media (max-width:642px) {
+.footer_mask{
+  display: none;
+}
+}
+/* ------------- */
