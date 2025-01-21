@@ -17,10 +17,13 @@ const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
 // When the user scrolls down 100px from the top, show the button
 window.onscroll = function() {
+    console.log("scrolled");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         scrollToTopBtn.classList.add('show');
+        console.log("ss");
     } else {
         scrollToTopBtn.classList.remove('show');
+        console.log("aa");
     }
 };
 
