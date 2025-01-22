@@ -646,7 +646,6 @@ iframe{
  background: var(--Primary-Color, #388260);;
 
 }
-
 .footer_mask {
   position: absolute;
   right: 0;
@@ -673,8 +672,6 @@ iframe{
   margin-bottom: 1.5rem;
   color: var(--white, #FDFDFD);
 text-align: right;
-
-/* New folder/24 Px Semibold */
 font-family: "Noto Sans Arabic";
 font-size: 24px;
 font-style: normal;
@@ -688,7 +685,7 @@ line-height: normal;
 .footer_contact_with_flag a {
   color: #CBD2D9;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 19px;
   margin-bottom: 1rem;
   text-decoration: none;
   display: block;
@@ -767,12 +764,20 @@ line-height: normal;
   }
 
   .footer_second_section {
-      text-align: center;
-  }
+    display: flex
+    ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    margin-top: 15px; }
+        
+
 
   .footer_third_section {
       text-align: center;
       margin-top: 30px;
+      padding-top: 60px;
+
   }
 
   .HD_footer{
