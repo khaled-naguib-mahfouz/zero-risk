@@ -201,94 +201,76 @@ height: 421.049px;
 }
 
 /* ---------------- */
-.block{
-    width: 80% !important;
-}
 
-.div1{
-  max-width: 500px;
-  height: 550px;
-}
-.div2{
-  max-width: 500px;
-  height: 550px;
-}
-.div3{
-  
-  max-width: 500px;
-  height: 550px;
-}
-.div4{
-  
-  max-width: 500px;
-  height: 550px;
-}
-.heading{
-  font-size: 1.5rem;
-  text-align: right;
-  font-family: "Noto Sans Arabic";
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-.sub-head{
-  color: var(--Paragraph, #535659);
-text-align: right;
-font-family: "Noto Sans Arabic";
-font-size: 1rem;
-font-style: normal;
-font-weight: 400;
-line-height: 180%; 
-}
-.text{
-  position: relative;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-.text-real{
-  text-align: right;
-  position: relative;
-top: 50%
-  }
-.div1 .img1 {
-  max-width: 100%;
-    height: 600px;
-  border-radius: 8px;
-  float: right;
 
-}
 
-.div1 .img2 {
-  max-width: 100%;
-      height: 600px;
-  border-radius: 8px;
-  float: left;
 
-}
-.div3 .img1 {
-  max-width: 100%;
-  height: 600px;
-border-radius: 8px;
-float: right;
 
-}
-.div4 .img2 {
-  max-width: 100%;
-  height: 600px;
-border-radius: 8px;
-float: left;
-
-}
-@media (max-width: 991px) { /* Applies to medium screens and smaller */
-  .y-row {
-      display: flex;
-      flex-direction: column-reverse; /* Reverse the order */
-  }
-}
 
 /* ------------ */
+.engagment{
 
+}
+.contact{
+  align-self: stretch;
+  color: var(--text-color, #252626);
+  font-family: Cairo;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+}
+.contact-sub{
+  color: #636262;
+}
+.div1{
+  background-color: #FFF;
+  padding: 80px 32px 66px 32px;
+border-radius: 20px;
+}
+.block{
+  margin: 50px 0;
+
+}
+.footer_contact_with_flagg{
+  display: flex;
+  gap: 15px;
+}
+.footer_contact_with_flagg a{
+  color: #636262;
+  font-weight: 400;
+  font-size: 19px;
+  text-decoration: none;
+  display: block;
+}
+.z-row{
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 57px ;
+  height: 758px;
+
+      align-items: center;
+      justify-content: center;
+      background: #F2F6F4;
+}
+.our-form h2{
+  text-align: center;
+  color: #388260;
+  font-family: "Noto Sans Arabic";
+  font-weight: 700;
+  align-self: stretch;
+}
+.our-form{
+  text-align: right;
+}
+.our-form button{
+  height: 40px !important;
+  background-color: #388260 !important;
+  border-radius: 8px !important; 
+color: white;
+
+}
 /* --------------- */
 
 #scrollToTopBtn {
@@ -372,8 +354,6 @@ line-height: normal;
   width: 24px;
   height: 20px;
   margin-right: 0.5rem;
-  
-
 }
 
 .footer_support a {
