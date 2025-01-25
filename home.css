@@ -405,6 +405,8 @@ left: 2%;
   align-items: flex-start;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
+
 }
 .title1 {
   width: 129px;
@@ -438,7 +440,7 @@ left: 2%;
   align-self: stretch;
 }
 .main {
-  width: 744px;
+  width: 100%;
   height: 375px;
   position: relative;
 }
@@ -453,9 +455,8 @@ left: 2%;
 
 .shadow {
   display: flex;
-  width: 744px;
+  width: 100%;
   height: 375px;
-  padding: 156px 244px 175px 245px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -629,7 +630,7 @@ iframe{
 #scrollToTopBtn {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 20%;
   display: none;
   background: var(--Primary-Color, #388260);
   color: white;
