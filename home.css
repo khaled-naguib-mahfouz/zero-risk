@@ -43,7 +43,6 @@ body {
   justify-content: flex-end;
   align-items: center;
   background: var(--white, #fdfdfd);
-  overflow: hidden;
 }
 .main-content {
   display: flex;
