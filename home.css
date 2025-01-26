@@ -43,6 +43,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   background: var(--white, #fdfdfd);
+  overflow: hidden;
 }
 .main-content {
   display: flex;
@@ -130,8 +131,8 @@ ul li {
 }
 .bi-x{
   position: absolute;
-  top: 44px;
-  right: 10px;
+  top: 5%;
+  right: 8%;
 }
 /* Responsive Adjustment */
 @media (max-width: 768px) {
@@ -641,7 +642,7 @@ iframe{
 #scrollToTopBtn {
   position: fixed;
   bottom: 20px;
-  right: 20%;
+  right: 10%;
   display: none;
   background: var(--Primary-Color, #388260);
   color: white;
