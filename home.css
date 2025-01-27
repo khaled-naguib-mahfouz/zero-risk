@@ -636,7 +636,7 @@ iframe{
 .secc{
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  
   position: relative;
   align-items: center;
 }
