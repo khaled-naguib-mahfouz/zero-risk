@@ -201,6 +201,14 @@ height: 421.049px;
 }
 
 /* ---------------- */
+.z-row{
+  gap: 100px;
+  margin-bottom: 100px;
+}
+.y-row{
+  gap: 100px;
+  margin-bottom:100px ;
+}
 .block{
     width: 80% !important;
 }
@@ -264,7 +272,6 @@ top: 50%
       height: 600px;
   border-radius: 8px;
   float: left;
-
 }
 .div3 .img1 {
   max-width: 100%;
@@ -280,11 +287,30 @@ border-radius: 8px;
 float: left;
 
 }
+.lastt{
+  margin-bottom: 50px !important;
+}
 @media (max-width: 991px) { /* Applies to medium screens and smaller */
   .z-row {
       display: flex;
       flex-direction: column-reverse; /* Reverse the order */
   }
+  .div2.text{
+    height: 300px;
+  }
+.div3.text{
+  height: 300px;
+
+}
+.sub-head{
+  line-height: 120%;
+}
+.z-row{
+  margin-bottom: 0px !important;
+}
+.y-row{
+  margin-bottom: 0px !important;
+}
 }
 
 /* ------------ */
@@ -321,7 +347,7 @@ float: left;
   box-shadow: 0px 3px 6px #00000029;
   width: 100%;
  background: var(--Primary-Color, #388260);;
-
+margin-top: 100px;
 }
 .footer_mask {
   position: absolute;
