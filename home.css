@@ -171,6 +171,7 @@ width: 100% !important;
   }
   .welcome-content{
     left:20% !important;
+    top: 2% !important;
   }
 }
 
@@ -224,7 +225,6 @@ left: 2%;
   left: 75%;
     top: 18%;
   position: absolute;
-  height: 422px;
   z-index: 600;
   flex-shrink: 0;
   /* position: absolute;
