@@ -253,7 +253,6 @@ left: 2%;
 }
 .paragraph-container {
   display: flex;
-  height: 330px;
   /* width: 500px; */
   flex-direction: column;
   justify-content: center;
