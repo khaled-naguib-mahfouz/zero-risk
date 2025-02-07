@@ -257,7 +257,6 @@ left: 2%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  gap: 10%;
   flex-shrink: 0;
   /* position: relative; */
 }
@@ -266,7 +265,6 @@ left: 2%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  gap: 7%;
   /* flex-shrink: 0; */
   /* position: absolute;
   top: 0%;
