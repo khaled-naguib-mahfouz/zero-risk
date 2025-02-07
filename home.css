@@ -173,6 +173,12 @@ width: 100% !important;
     left:20% !important;
     top: 2% !important;
   }
+  .know-more{
+    margin-top: 25px !important;
+  }
+  .welcome-text{
+    padding: 32px 24px !important;
+  }
 }
 
 .welcome-section {
