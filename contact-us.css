@@ -412,6 +412,16 @@ line-height: normal;
 }
 
 @media (max-width:991px) {
+  .footer{
+    flex-direction: column-reverse !important;
+  }
+  .footer > *:not(:last-child) {
+    order: 2;
+}
+
+.footer > :last-child {
+    order: 1;
+}
   .footer_init_logo {
       margin: auto;
       display: block;
