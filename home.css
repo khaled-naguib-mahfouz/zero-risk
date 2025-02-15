@@ -674,13 +674,13 @@ iframe{
   padding: 40px 0px 4px 34px;
   box-shadow: 0px 3px 6px #00000029;
   width: 100%;
- background: var(--Primary-Color, #388260);;
-
+  background: var(--Primary-Color, #388260);
 }
+
 .footer_mask {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -1px; /* Ensure it aligns correctly in Safari */
 }
 
 .footer_init_logo {
@@ -697,61 +697,50 @@ iframe{
 }
 
 .footer_section_title {
-  color: #F5F7FA;
-  font-weight: 500;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
   color: var(--white, #FDFDFD);
-text-align: right;
-font-family: "Noto Sans Arabic";
-font-size: 24px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  text-align: right;
+  font-family: "Noto Sans Arabic";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
+
+.footer_second_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .footer_second_section p {
   display: flex;
-  gap: 10px;
+  align-items: center;
 }
+
 .footer_contact_with_flag a {
   color: #CBD2D9;
   font-weight: 400;
   font-size: 19px;
   margin-bottom: 1rem;
   text-decoration: none;
-  display: block;
-
+  display: flex;
+  align-items: center;
 }
 
 .footer_contact_with_flag img {
   width: 24px;
   height: 20px;
-  margin-right: 0.5rem;
-  
-
+  margin-left: 0.5rem;
 }
 
 .footer_support a {
-  color: #CBD2D9;
-  font-weight: 400;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  text-decoration: none;
-  display: block;
-
   color: var(--white, #FDFDFD);
   font-family: "Noto Sans Arabic";
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
-}
-
-.footer_support img {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.5rem;
-
+  text-decoration: none;
+  display: block;
 }
 
 .footer_copyright {
@@ -761,75 +750,87 @@ line-height: normal;
   font-weight: 400;
 }
 
-
-.iconss{
+/* Safari flexbox gap fix */
+.iconss {
   display: flex;
-  gap: 30px;
-  
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
-.iconss i{
-  font-size: 15px; /* Icon size */
-  color: #333; /* Default icon color */
-  background-color: white; /* White background */
-  padding: 5px; 
-  border-radius: 50%; /* Make it a circle */
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+
+.iconss a {
+  margin-right: 15px;
+}
+
+.iconss i {
+  font-size: 15px;
+  color: #333;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.3s ease-in-out;
-
 }
 
-@media (max-width:991px) {
-  .footer{
+/* Fixing layout issues in Safari for smaller screens */
+@media (max-width: 991px) {
+  .footer {
     flex-direction: column-reverse !important;
   }
+
   .footer > *:not(:last-child) {
     order: 2;
-}
+  }
 
-.footer > :last-child {
+  .footer > :last-child {
     order: 1;
-}
+  }
+
   .footer_init_logo {
-      margin: auto;
-      display: block;
-      margin-bottom: 40px;
+    margin: auto;
+    display: block;
+    margin-bottom: 40px;
   }
 
   .footer_init_about {
-      text-align: center;
+    text-align: center;
   }
 
   .footer_second_section {
-    display: flex
-    ;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; 
-    margin-top: 15px; }
-        
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
 
   .footer_third_section {
-      text-align: center;
-      margin-top: 30px;
-      padding-top: 60px;
-
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 60px;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .HD_footer{
-      padding: 24px;
+  .HD_footer {
+    padding: 24px;
   }
-
 }
 
-@media (max-width:642px) {
-.footer_mask{
-  display: none;
+@media (max-width: 642px) {
+  .footer_mask {
+    display: none;
+  }
 }
+
+/* Improve font rendering in Safari */
+body {
+  -webkit-font-smoothing: antialiased;
 }
+
 /* ------------- */
