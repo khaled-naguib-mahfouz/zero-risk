@@ -216,18 +216,18 @@ ul li {
   }
 }
 
-@media (max-width: 768px)  {
+@media (max-width: 768px) {
   .welcome-section {
-width: 100% !important;
+    width: 100% !important;
   }
-  .welcome-content{
-    left:20% !important;
+  .welcome-content {
+    left: 20% !important;
     top: 4% !important;
   }
-  .know-more{
+  .know-more {
     margin-top: 25px !important;
   }
-  .welcome-text{
+  .welcome-text {
     padding: 32px 24px !important;
   }
 }
@@ -236,18 +236,19 @@ width: 100% !important;
   height: 672.952px;
   min-width: 350px;
   width: 80%;
-  /* display: flex;
-  position: relative; */
+  flex-shrink: 0 !important;
 }
+
 .welcome-section img {
-  /* width: 716px; */
   height: 672.952px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   border: 1px solid var(--Primary-Color, #388260);
   border-radius: 8px;
   position: relative;
   z-index: 1; /* Ensures image is above pseudo-element */
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow: hidden; /* Fix border-radius not applying */
 }
 
 .image-container {
@@ -255,122 +256,85 @@ width: 100% !important;
   position: relative;
   width: 90%;
   height: 672.952px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
+
 .rectangle {
   width: 92%;
   height: 95%;
   position: absolute;
-top: 2%;
-left: 2%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  top: 2%;
+  left: 2%;
+  flex-shrink: 0;
   border-radius: 8px;
   border: 2.5px solid var(--Primary-Color, #388260);
   background: rgba(217, 217, 217, 0);
 }
+
 .image-container img {
   position: absolute;
   top: 0%;
   width: 90%;
   height: 93%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
-
 
 .welcome-content {
   width: 50%;
   min-width: 320px;
   left: 75%;
-    top: 18%;
+  top: 18%;
   position: absolute;
   z-index: 600;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  /* position: absolute;
-  top: 50%;
-  left: 30%; */
+  flex-shrink: 0;
+  transform: translate(-50%, -50%); /* Fix positioning issues */
 }
+
 .welcome-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 64px 48px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   gap: 10px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   border-radius: 8px;
-  background: var(
-    --linear,
-    linear-gradient(
-      248deg,
-      rgba(56, 130, 96, 0.9) -3.73%,
-      rgba(41, 153, 109, 0.9) 52.59%,
-      rgba(56, 130, 96, 0.9) 109.33%
-    )
+  background: linear-gradient(
+    248deg,
+    rgba(56, 130, 96, 0.9) -3.73%,
+    rgba(41, 153, 109, 0.9) 52.59%,
+    rgba(56, 130, 96, 0.9) 109.33%
   );
+  background-color: #388260; /* Fallback for Safari */
 }
+
 .paragraph-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  /* width: 500px; */
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  /* position: relative; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  flex-shrink: 0;
 }
+
 .head {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  /* flex-shrink: 0; */
-  /* position: absolute;
-  top: 0%;
-  right: 0%; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
+
 .head-text {
-  /* width: 591px; */
   color: var(--white, #fdfdfd);
   text-align: center;
   font-family: "Noto Sans Arabic";
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  /* line-height: 150%; 60px */
 }
+
 .sec-text {
   color: var(--white, #fdfdfd);
   text-align: right;
@@ -378,29 +342,24 @@ left: 2%;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
 }
+
 .know-more {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  -webkit-appearance: none;
   display: flex;
   width: 70%;
   height: 56px;
   padding: 8px 16px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 7%;
-  /* flex-shrink: 0; */
   border-radius: 8px;
   background: rgba(253, 253, 253, 0.99);
   margin-top: 50px;
-  
   text-decoration: none;
+  border: none;
 }
+
 .know-more-text {
   color: var(--Primary-Color, #388260);
   text-align: right;
@@ -408,29 +367,43 @@ left: 2%;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
 }
+
 .who-are-we {
   background: #f2f6f4;
   padding-block: 4rem;
   padding-left: 50px;
   padding-right: 50px;
 }
-.message {
-  /* display: flex;
-  flex-wrap: wrap; */
-}
+
 .switch-container {
   width: 88px;
   height: 88px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   background-color: #dedede;
   border-radius: 100%;
   position: absolute;
   top: -20%;
   left: 35%;
 }
+
+/* Safari-specific fixes */
+@supports (-webkit-touch-callout: none) {
+  .welcome-section {
+    width: 100% !important;
+  }
+  .welcome-content {
+    left: 20% !important;
+    top: 4% !important;
+  }
+  .know-more {
+    margin-top: 25px !important;
+  }
+  .welcome-text {
+    padding: 32px 24px !important;
+  }
+}
+
 
 .card {
   height: 200px;
